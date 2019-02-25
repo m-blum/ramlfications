@@ -120,7 +120,7 @@ class DataTypeAttrs(object):
 
 
 @attr.s
-class BaseDataType(RAMLDataType, DataTypeAttrs):
+class BaseDataType(DataTypeAttrs, RAMLDataType):
     """
     Base class for all data types.
     """
